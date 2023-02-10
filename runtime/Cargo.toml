@@ -1,0 +1,263 @@
+[package]
+authors = ['CloudWalk']
+edition = '2021'
+homepage = 'https://substrate.io'
+license = 'GPL-3.0'
+name = 'cloudwalk-network-testnet-runtime'
+publish = false
+repository = 'https://github.com/cloudwalk/cloudwalk-network'
+version = '1.0.3'
+
+[package.metadata.docs.rs]
+targets = ['x86_64-unknown-linux-gnu']
+
+[build-dependencies.substrate-wasm-builder]
+branch = 'cloudwalk-polkadot-v0.9.25'
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.codec]
+default-features = false
+features = ['derive']
+package = 'parity-scale-codec'
+version = '3.0.0'
+
+[dependencies.fp-rpc]
+default-features = false
+git = 'https://github.com/cloudwalk/frontier.git'
+branch = 'cloudwalk-polkadot-v0.9.25'
+
+[dependencies.fp-self-contained]
+default-features = false
+git = 'https://github.com/cloudwalk/frontier.git'
+branch = 'cloudwalk-polkadot-v0.9.25'
+
+[dependencies.frame-benchmarking]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+optional = true
+
+[dependencies.frame-executive]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.frame-support]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.frame-system]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.frame-system-benchmarking]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+optional = true
+
+[dependencies.frame-system-rpc-runtime-api]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.pallet-aura]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.pallet-balances]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.pallet-base-fee]
+default-features = false
+git = 'https://github.com/cloudwalk/frontier.git'
+branch = 'cloudwalk-polkadot-v0.9.25'
+
+[dependencies.pallet-dynamic-fee]
+default-features = false
+git = 'https://github.com/cloudwalk/frontier.git'
+branch = 'cloudwalk-polkadot-v0.9.25'
+
+[dependencies.pallet-ethereum]
+default-features = false
+git = 'https://github.com/cloudwalk/frontier.git'
+branch = 'cloudwalk-polkadot-v0.9.25'
+
+[dependencies.pallet-evm]
+default-features = false
+git = 'https://github.com/cloudwalk/frontier.git'
+branch = 'cloudwalk-polkadot-v0.9.25'
+
+[dependencies.pallet-evm-precompile-modexp]
+default-features = false
+git = 'https://github.com/cloudwalk/frontier.git'
+branch = 'cloudwalk-polkadot-v0.9.25'
+
+[dependencies.pallet-evm-precompile-sha3fips]
+default-features = false
+git = 'https://github.com/cloudwalk/frontier.git'
+branch = 'cloudwalk-polkadot-v0.9.25'
+
+[dependencies.pallet-evm-precompile-simple]
+default-features = false
+git = 'https://github.com/cloudwalk/frontier.git'
+branch = 'cloudwalk-polkadot-v0.9.25'
+
+[dependencies.pallet-grandpa]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.pallet-randomness-collective-flip]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.pallet-sudo]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.pallet-timestamp]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.pallet-transaction-payment]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.pallet-transaction-payment-rpc-runtime-api]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.scale-info]
+default-features = false
+features = ['derive']
+version = '2.1.2'
+
+[dependencies.serde]
+features = ['derive']
+optional = true
+version = '1.0.101'
+
+[dependencies.sp-api]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.sp-block-builder]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.sp-consensus-aura]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.sp-core]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.sp-inherents]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.sp-io]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.sp-offchain]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.sp-runtime]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.sp-session]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.sp-std]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+version = '4.0.0'
+
+[dependencies.sp-transaction-pool]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+
+[dependencies.sp-version]
+branch = 'cloudwalk-polkadot-v0.9.25'
+default-features = false
+git = 'https://github.com/cloudwalk/substrate'
+version = '5.0.0'
+
+[features]
+aura = []
+default = [
+    'std',
+    'aura',
+]
+manual-seal = []
+runtime-benchmarks = [
+    'frame-benchmarking',
+    'frame-system-benchmarking',
+    'frame-system/runtime-benchmarks',
+    'pallet-ethereum/runtime-benchmarks',
+    'pallet-evm/runtime-benchmarks',
+]
+std = [
+    'serde',
+    'codec/std',
+    'scale-info/std',
+    'sp-api/std',
+    'sp-block-builder/std',
+    'sp-consensus-aura/std',
+    'sp-core/std',
+    'sp-inherents/std',
+    'sp-io/std',
+    'sp-offchain/std',
+    'sp-runtime/std',
+    'sp-session/std',
+    'sp-std/std',
+    'sp-transaction-pool/std',
+    'sp-version/std',
+    'frame-executive/std',
+    'frame-support/std',
+    'frame-system-rpc-runtime-api/std',
+    'frame-system/std',
+    'pallet-aura/std',
+    'pallet-balances/std',
+    'pallet-grandpa/std',
+    'pallet-randomness-collective-flip/std',
+    'pallet-sudo/std',
+    'pallet-timestamp/std',
+    'pallet-transaction-payment-rpc-runtime-api/std',
+    'pallet-transaction-payment/std',
+    'fp-rpc/std',
+    'fp-self-contained/std',
+    'pallet-base-fee/std',
+    'pallet-dynamic-fee/std',
+    'pallet-ethereum/std',
+    'pallet-evm/std',
+    'pallet-evm-precompile-simple/std',
+    'pallet-evm-precompile-sha3fips/std',
+]

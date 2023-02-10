@@ -1,0 +1,26 @@
+name: fmt
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  fmt:
+    name: ubuntu-latest
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: setup
+      uses: actions-rs/toolchain@v1
+      with:
+        profile: minimal
+        toolchain: nightly-2022-05-02
+        target: wasm32-unknown-unknown
+        override: true
+        components: rustfmt
+    - name: fmt
+      run: cargo fmt --all -- --check
